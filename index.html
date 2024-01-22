@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justice - Home Page</title>
+    <!-- Google font cdn link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css and daisy ui cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awsome cdn link  -->
+    <script
+      src="https://kit.fontawesome.com/236e7d5b35.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css style -->
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .garamond-font {
+        font-family: "EB Garamond", serif;
+      }
+
+      .paragraph {
+        color: #707070;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="max-w-6xl mx-auto lg:mt-8 mt-2 poppins-font px-4">
+      <nav class="flex justify-between items-center">
+        <div>
+          <img src="images/logo2.png" alt="" />
+        </div>
+        <div class="hidden lg:block">
+          <ul class="flex paragraph">
+            <li class="ml-8 hover:text-[#B68C5A] duration-300">
+              <a href="#">Home</a>
+            </li>
+            <li class="ml-8 hover:text-[#B68C5A] duration-300">
+              <a href="#">Services <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li class="ml-8 hover:text-[#B68C5A] duration-300">
+              <a href="#">Cases <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li class="ml-8 hover:text-[#B68C5A] duration-300">
+              <a href="#">Blog <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li class="ml-8 hover:text-[#B68C5A] duration-300">
+              <a href="#">Contact Us <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="px-6 py-3 bg-[#B68C5A] hover:bg-black duration-500 rounded-lg text-white hidden lg:block"
+        >
+          Free Consultation
+        </button>
+        <span class="text-2xl lg:hidden">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </span>
+      </nav>
+      <!-- banner section start -->
+      <section
+        class="h-[300px] md:h-[480px] bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-[100%_100%] text-center text-white flex justify-center items-center rounded-lg mt-10"
+      >
+        <div class="space-y-6">
+          <h1 class="text-2xl md:text-5xl garamond-font">
+            We Provide Effective <br />
+            Legal Solutions
+          </h1>
+          <p class="poppins-font">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority <br />
+            have suffered alteration in some form, by injected humour.
+          </p>
+          <form>
+            <input
+              type="text"
+              placeholder="Search your services"
+              class="py-3 px-2 paragraph lg:w-[500px] rounded-lg outline-none"
+            />
+            <button
+              class="md:ml-3 px-6 py-3 bg-[#B68C5A] hover:bg-black duration-500 rounded-lg text-white"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
